@@ -22,9 +22,25 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        
+                        <li class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Admin panel
+                            </button>
+                            @* Controller name is here, points to AdminTagsController *@
+                            @* Action name is here, points to method inside that Controller *@
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" 
+                                    asp-area=""
+                                    asp-controller="AdminTags"
+                                    asp-action="Add">
+                                    Add Tag
+                                    </a>
+                                </li>
+                            </ul> 
                         </li>
+
                     </ul>
                 </div>
             </div>
