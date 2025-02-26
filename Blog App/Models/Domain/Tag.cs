@@ -1,4 +1,4 @@
-﻿namespace Blog_App.Controllers.Domain
+﻿namespace Blog_App.Models.Domain
 {
     public class Tag
     {

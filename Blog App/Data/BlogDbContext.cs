@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Blog_App.Controllers.Domain;
+using Blog_App.Models.Domain;
 
 
 namespace Blog_App.Data

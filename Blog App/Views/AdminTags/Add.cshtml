@@ -1,7 +1,26 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
+@model Blog_App.Models.ViewModels.AddTagRequest
 @{
 }
 
-<h1>Hello this is Add</h1>
+<div class="container py-5 d-flex justify-content-center">
+    <div class="card shadow-lg p-4" style="width: 500px;">
+        <h2 class="text-center mb-1">Add New Tag</h2>
+        <h5 class="text-center mb-4">(Admins Only)</h5>
+        <form method="post">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" asp-for="Name" placeholder="Enter tag name..." required />
+            </div>
+            <div class="mb-3">
+                <label for="displayName" class="form-label">Display Name</label>
+                <input type="text" class="form-control" id="displayName" asp-for="DisplayName" placeholder="Enter display name..." required />
+            </div>
+            <div class="d-grid">
+                <button type="submit" class="btn btn-dark btn-lg">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
